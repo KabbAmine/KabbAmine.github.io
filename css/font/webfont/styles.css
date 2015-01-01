@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "webfont";
+  src:url("fonts/webfont.eot");
+  src:url("fonts/webfont.eot?#iefix") format("embedded-opentype"),
+    url("fonts/webfont.woff") format("woff"),
+    url("fonts/webfont.ttf") format("truetype"),
+    url("fonts/webfont.svg#webfont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "webfont" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "webfont" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-user:before {
+  content: "a";
+}
+.icon-twitter-square:before {
+  content: "b";
+}
+.icon-facebook-square:before {
+  content: "c";
+}
+.icon-github-square:before {
+  content: "d";
+}
+.icon-skills:before {
+  content: "e";
+}
+.icon-mail-square:before {
+  content: "f";
+}
+.icon-github-square-alt:before {
+  content: "g";
+}
+.icon-globe:before {
+  content: "h";
+}
+.icon-c:before {
+  content: "i";
+}
+.icon-java:before {
+  content: "j";
+}
+.icon-shell:before {
+  content: "k";
+}
+.icon-script:before {
+  content: "l";
+}
+.icon-windows8:before {
+  content: "m";
+}
+.icon-sass:before {
+  content: "n";
+}
+.icon-css:before {
+  content: "o";
+}
+.icon-debian:before {
+  content: "p";
+}
+.icon-html:before {
+  content: "q";
+}
+.icon-github:before {
+  content: "r";
+}
+.icon-javascript:before {
+  content: "s";
+}
+.icon-python:before {
+  content: "t";
+}
+.icon-php:before {
+  content: "u";
+}
+.icon-mysql:before {
+  content: "v";
+}
+.icon-ubuntu:before {
+  content: "w";
+}
+.icon-terminal:before {
+  content: "x";
+}
+.icon-vector:before {
+  content: "z";
+}
+.icon-art:before {
+  content: "A";
+}
+.icon-pen:before {
+  content: "B";
+}
+.icon-linux:before {
+  content: "y";
+}
+.icon-compass:before {
+  content: "C";
+}
+.icon-script-alt:before {
+  content: "D";
+}
+.icon-windows:before {
+  content: "E";
+}

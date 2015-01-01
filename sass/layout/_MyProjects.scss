@@ -1,0 +1,12 @@
+// -------------------------- //
+//			Responsive
+// -------------------------- //
+
+@media only screen and (max-width: $l_medium) {
+	#myProjects {
+
+		ul.bubble-slider {
+			dd { color: $color_header; }
+		}
+	}
+}

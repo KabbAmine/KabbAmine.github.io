@@ -1,0 +1,79 @@
+// Sizes
+$width: 960px;
+$gutter: 20px;
+
+// Colors
+$color_primary: #e0d748;
+$color_background: #f8f8f8;
+
+
+// -------------------------- //
+//			BAZE
+// -------------------------- //
+
+// Sizes
+$width: $width;
+$gutter: $gutter;
+
+// Fonts
+$font_family: 'Lato', sans-serif;
+$font_header: 'Bitter', serif;
+$font_code: 'Freemono', 'monospace', serif;
+$font_size: 16px;
+$line_height: 1.4 * $font_size;
+
+// Colors
+$color_primary: $color_primary;
+$color_text: #8a8a8a!default;
+$color_header: darken($color_text, 30);
+$color_background: $color_background;
+
+// -------------------------- //
+//		baze - layout
+// -------------------------- //
+
+$l_medium: 640px;
+$l_large: 1040px;
+
+// Grid
+$l_grid_gutter: $gutter;
+$l_grid_number_columns: 12;
+
+// Box
+$l_box_gutter: $gutter;
+$l_box_line_height: $line_height;
+
+$l_box_border_box: $color_background;
+$l_box_border_title: $color_primary;
+
+// -------------------------- //
+//		baze - modules
+// -------------------------- //
+
+$m_medium: $l_medium;
+$m_large: $l_large;
+
+// Buttons.
+$m_btn_line_height: $line_height;
+$m_btn_gutter: $gutter;
+
+$m_btn_font: $font_header;
+
+$m_btn_color: $color_background;
+$m_btn_color_background: $color_primary;
+
+$m_btn_color_error: #d16249;
+$m_btn_color_warning: #b8d149;
+$m_btn_color_dark: $color_header;
+
+// Bubble.
+$m_bubble_gutter: $gutter;
+
+$m_bubble_color: $color_primary;
+$m_bubble_color_background: $color_header;
+$m_bubble_font: $font_header;
+
+$m_bubble_width: 200px;
+
+$m_bubble_slider_height: 3;
+$m_bubble_slider_margin: 99%;

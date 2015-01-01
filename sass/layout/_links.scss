@@ -1,0 +1,27 @@
+.links {
+
+	ul  {
+		margin-bottom: 0;
+		text-align: center;
+
+		li  {
+			display: inline-block;
+			margin-right: $gutter / 4;
+
+			a {
+				margin-bottom: 0;
+				opacity: 0.5;
+
+				color: inherit;
+
+				& > [class^="icon-"] {
+					font-size: 3.5em;
+				}
+			}
+			a:hover {
+				opacity: 1;
+				color: $color_header;
+			}
+		}
+	}
+}

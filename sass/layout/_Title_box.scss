@@ -1,0 +1,37 @@
+#titleBox {
+	margin-top: $line_height / 2;
+	padding: (2 * $line_height) ($gutter / 2);
+
+	background: $color_text image-url("pattern_dark.jpg");
+
+	& * { text-align: center; }
+
+	& ul {
+		margin-bottom: $line_height;
+		@include border-radius(3px);
+	}
+
+	& h1 {
+		font-size: 1.7em;
+		line-height: 1.4em;
+		color: $color_primary;
+	}
+
+	& h2 {
+		font-family: $font_family;
+		font-size: 1.3em;
+	}
+
+	& h1:last-of-type { font-size: 1.8em; }
+	& h2:last-of-type { margin-bottom: 0; }
+}
+
+// -------------------------- //
+//			Responsive
+// -------------------------- //
+@media only screen and (min-width: $l_large) {
+	#titleBox {
+		ul { margin-bottom: 0; }
+		h1, h2 { text-align: left; }
+	}
+}

@@ -1,0 +1,212 @@
+/* -------------------------- *\
+ *			LAYOUT
+\* -------------------------- */
+
+
+// -------------------------- //
+//			General
+// -------------------------- //
+
+:target {
+	@include animation-duration(2s);
+	@include animation-name(fade-background);
+}
+@keyframes fade-background {
+	0% {
+		background-color: $color_primary;
+		border: 1px solid darken($color_primary, 10);
+	}
+	100% {}
+}
+
+span.fa { margin-bottom: 0; }
+
+// -------------------------- //
+//			Header
+// -------------------------- //
+#header {
+
+	nav {
+		margin-bottom: 0;
+		border-bottom: 1px solid lighten($color_text, 40);
+
+		@include box-shadow(lighten($color_text, 45) 0 -1px 0 inset);
+
+		& ul:first-child {
+			text-align: left;
+			li { margin-right: $gutter; }
+		}
+		& ul:last-child {
+			text-align: right;
+			li { margin-left: $gutter; }
+		}
+
+		ul {
+			margin-bottom: $line_height / 2;
+			list-style-type: none;
+
+			color: inherit;
+
+			li {
+				display: inline-block;
+
+				& a {
+					font-family: $font_header;
+					font-size: 1.1em;
+					opacity: 0.5;
+
+					color: inherit;
+				}
+				& a:hover {
+					padding-bottom: $line_height / 4;
+					opacity: 1;
+
+					color: darken($color_header, 5);
+
+					@include transition-duration(0.5s);
+				}
+			}
+		}
+	}
+
+	#titleBox {
+		margin-top: $line_height / 2;
+		padding: (2 * $line_height) ($gutter / 2);
+
+		background: $color_text image-url("pattern_dark.jpg");
+
+		& * { text-align: center; }
+
+		& ul {
+			margin-bottom: $line_height;
+			@include border-radius(3px);
+		}
+
+		& h1 {
+			font-size: 1.7em;
+			line-height: 1.4em;
+			color: $color_primary;
+		}
+
+		& h2 {
+			font-family: $font_family;
+			font-size: 1.3em;
+		}
+
+		& h1:last-of-type { font-size: 1.8em; }
+		& h2:last-of-type { margin-bottom: 0; }
+	}
+}
+
+// -------------------------- //
+//			Middle
+// -------------------------- //
+#middle {
+	h1 {
+		padding-bottom: $line_height / 2;
+
+		&.category-title {
+			border-bottom: 1px solid lighten($color_primary, 20);
+			@include box-shadow(lighten($color_primary, 25) 0px -1px 0 inset);
+		}
+	}
+
+	aside {
+		margin-bottom: 0;
+	}
+
+	.links {
+		ul  {
+			margin-bottom: 0;
+			text-align: center;
+			li  {
+				display: inline-block;
+				margin-right: $gutter / 4;
+
+				a {
+					margin-bottom: 0;
+					opacity: 0.5;
+
+					color: inherit;
+				}
+				a:hover {
+					opacity: 1;
+					color: $color_header;
+				}
+			}
+		}
+	}
+}
+
+// -------------------------- //
+//			Footer
+// -------------------------- //
+#footer {
+
+	* {
+		line-height: $line_height;
+		text-align: center;
+		color: lighten($color_text, 15);
+	}
+
+	& p:first-of-type { margin: 0; }
+
+	& > p:last-child {
+		margin-top: $line_height;
+		color: $color_text;
+		a { color: inherit; }
+	}
+
+	margin: $line_height 0 0 0;
+	padding-top: $line_height / 2;
+
+	font-family: $font_header;
+	font-size: 0.9em;
+	line-height: 16px;
+
+	border-top: 1px solid lighten($color_text, 30);
+
+	@include box-shadow(lighten($color_text, 35) 0 1px 0 inset);
+}
+
+
+// -------------------------- //
+//			RESPONSIVE
+// -------------------------- //
+
+// -------------------------- //
+//			Header
+// -------------------------- //
+@media only screen and (max-width: $l_medium) {
+	#header {
+		nav {
+
+			& ul:first-of-type {
+				text-align: right;
+				li { margin-right: $gutter; }
+				& li:last-of-type { margin-left: $gutter / 2;}
+			}
+			& ul:last-of-type {
+				text-align: left;
+				li { margin-left: $gutter; }
+				& li:first-of-type { margin-left: $gutter / 2;}
+			}
+			ul { margin-bottom: $gutter / 2; }
+			ul li {
+				margin-right: 10px;
+				font-size: 2.7em;
+
+				.menu-element { display: none; }
+				a:hover { border: none; }
+			}
+		}
+	}
+}
+@media only screen and (min-width: $l_large) {
+	#header {
+		#titleBox {
+			ul { margin-bottom: 0; }
+			h1, h2 { text-align: left; }
+		}
+	}
+}

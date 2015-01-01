@@ -1,0 +1,32 @@
+// -------------------------- //
+//			Footer
+// -------------------------- //
+#footer {
+
+	* {
+		line-height: $line_height;
+		text-align: center;
+		color: lighten($color_text, 15);
+	}
+
+	a { color: darken($color_text, 10); }
+	a:hover { color: darken($color_text, 25); }
+
+	& p:first-of-type { margin: 0; }
+
+	& > p:last-child {
+		margin-top: $line_height;
+		color: $color_text;
+	}
+
+	margin: $line_height 0 0 0;
+	padding-top: $line_height / 2;
+
+	font-family: $font_header;
+	font-size: 0.9em;
+	line-height: 16px;
+
+	border-top: 1px solid lighten($color_text, 30);
+
+	@include box-shadow(lighten($color_text, 35) 0 1px 0 inset);
+}

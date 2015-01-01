@@ -1,0 +1,22 @@
+// -------------------------- //
+//			Middle
+// -------------------------- //
+
+#middle {
+
+	h1.category-title {
+		padding-bottom: $line_height / 2;
+		border-bottom: 1px solid lighten($color_primary, 20);
+
+		@include box-shadow(lighten($color_primary, 25) 0px -1px 0 inset);
+	}
+
+	aside {
+		margin-bottom: 0;
+	}
+
+	@import "layout/skills";
+	@import "layout/links";
+
+	@import "layout/MyProjects";
+}
