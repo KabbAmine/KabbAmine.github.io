@@ -6,10 +6,9 @@
 
 	& * { text-align: center; }
 
-	& ul {
-		margin-bottom: $line_height;
-		@include border-radius(3px);
-	}
+	img { background: $color_text image-url("pattern.jpg") fixed; }
+
+	& ul { margin-bottom: $line_height; }
 
 	& h1 {
 		font-size: 1.7em;
