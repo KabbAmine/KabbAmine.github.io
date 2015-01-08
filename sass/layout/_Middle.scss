@@ -4,6 +4,10 @@
 
 #middle {
 
+	max-width: $width;
+	margin: 0 auto;
+	padding: 0 ($gutter / 2);
+
 	h1.category-title {
 		padding-bottom: $line_height / 2;
 		border-bottom: 1px solid lighten($color_primary, 20);
