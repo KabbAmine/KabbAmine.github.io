@@ -11,7 +11,10 @@
 	}
 	& ul:last-child {
 		text-align: right;
-		li { margin-left: $gutter; }
+		li {
+			margin-left: $gutter;
+			margin-right: 0;
+		}
 	}
 
 	ul {
