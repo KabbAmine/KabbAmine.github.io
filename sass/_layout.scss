@@ -7,10 +7,10 @@
 //			General
 // -------------------------- //
 
-:target {
-	@include animation-duration(2s);
-	@include animation-name(fade-background);
-}
+// :target {
+// 	@include animation-duration(2s);
+// 	@include animation-name(fade-background);
+// }
 @keyframes fade-background {
 	0% {
 		background-color: $color_primary;

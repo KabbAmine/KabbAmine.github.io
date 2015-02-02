@@ -1672,14 +1672,6 @@ body {
 /* -------------------------- *\
  *			LAYOUT
 \* -------------------------- */
-:target {
-  -moz-animation-duration: 2s;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -moz-animation-name: fade-background;
-  -webkit-animation-name: fade-background;
-  animation-name: fade-background; }
-
 @keyframes fade-background {
   0% {
     background-color: #e0d748;
