@@ -10,10 +10,12 @@
 
 	& > div {
 		max-width: $width;
-		margin: 0 auto;
+		margin: $line_height auto 0 auto;
 	}
 
-	img { background: $color_text image-url("pattern.jpg") fixed; }
+	img {
+		background: $color_text image-url("pattern.jpg") fixed;
+	}
 
 	& ul { margin-bottom: $line_height; }
 
