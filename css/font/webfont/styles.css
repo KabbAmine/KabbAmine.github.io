@@ -125,9 +125,12 @@
 .icon-compass:before {
   content: "C";
 }
-.icon-script-alt:before {
-  content: "D";
-}
 .icon-windows:before {
   content: "E";
+}
+.icon-inkscape:before {
+  content: "H";
+}
+.icon-vim:before {
+  content: "I";
 }
