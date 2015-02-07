@@ -1746,7 +1746,7 @@ body {
     text-align: center; }
   #header #titleBox > div {
     max-width: 960px;
-    margin: 22.4px auto 0 auto; }
+    margin: 22.4px auto; }
   #header #titleBox img {
     background: #8a8a8a url('img/pattern.jpg?1414404587') fixed; }
   #header #titleBox ul {
