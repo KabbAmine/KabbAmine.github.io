@@ -1809,7 +1809,11 @@ body {
           font-family: "Bitter", serif;
           text-align: center;
           color: #a4a4a4;
-          background-color: #3e3e3e; }
+          background-color: #3e3e3e;
+          -moz-transition: background-color 0.4s;
+          -o-transition: background-color 0.4s;
+          -webkit-transition: background-color 0.4s;
+          transition: background-color 0.4s; }
           #middle .skills > .skill-category ul li > [class^="icon-"] {
             position: absolute;
             top: 10%;
@@ -1825,7 +1829,11 @@ body {
             height: 67.2px;
             padding: 22.4px 10px;
             opacity: 0;
-            font-size: 0.9em; }
+            font-size: 0.9em;
+            -moz-transition-duration: 0.4s;
+            -o-transition-duration: 0.4s;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s; }
           #middle .skills > .skill-category ul li.sub-skill {
             color: #bdbdbd;
             background-color: #575757; }
@@ -1836,18 +1844,10 @@ body {
             color: #3e3e3e;
             background-color: #a4a4a4; }
             #middle .skills > .skill-category ul li:hover > [class^="icon-"] {
-              opacity: 0;
-              -moz-transition-duration: 0.4s;
-              -o-transition-duration: 0.4s;
-              -webkit-transition-duration: 0.4s;
-              transition-duration: 0.4s; }
+              opacity: 0; }
             #middle .skills > .skill-category ul li:hover .skill-name {
               opacity: 1;
-              cursor: default;
-              -moz-transition-duration: 0.6s;
-              -o-transition-duration: 0.6s;
-              -webkit-transition-duration: 0.6s;
-              transition-duration: 0.6s; }
+              cursor: default; }
   @media only screen and (max-width: 1040px) {
     #middle .skills > .skill-category {
       width: 100%;
