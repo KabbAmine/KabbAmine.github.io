@@ -134,3 +134,6 @@
 .icon-vim:before {
   content: "I";
 }
+.icon-gulp:before {
+  content: "D";
+}
