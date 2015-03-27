@@ -47,6 +47,8 @@
 
 				@include transition-duration(0.5s);
 			}
+
+		  .menu-element:before { content: " "; }
 		}
 	}
 }

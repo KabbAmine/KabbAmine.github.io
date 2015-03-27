@@ -2094,6 +2094,9 @@ body {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
+#header .nav ul li .menu-element:before {
+  content: " ";
+}
 @media only screen and (max-width: 640px) {
   #header .nav ul:first-of-type {
     text-align: left;
