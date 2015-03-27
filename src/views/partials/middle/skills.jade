@@ -1,0 +1,62 @@
+mixin skill(name, icon, type)
+  case type
+    when 0
+      li
+        span(class='icon-#{icon}')
+        span(class='skill-name')= name
+    when 1
+      li(class='sub-skill')
+        span(class='icon-#{icon}')
+        span(class='skill-name')= name
+
+
+section#skills
+
+  h1.category-title Mes compétences
+
+  .skills
+
+    .skill-category
+      h3 Programmation
+      ul
+        +skill('C', 'c', 0)
+        +skill('Python', 'python', 0)
+        +skill('Java', 'java', 0)
+        +skill('Bash', 'script', 0)
+        +skill('VimL', 'vim', 0)
+
+    .skill-category
+      h3 Développement web
+      ul
+        +skill('HTML', 'html', 0)
+        //- Emplacement de Jade
+        +skill('CSS', 'css', 0)
+        +skill('Sass', 'sass', 1)
+        +skill('Compass', 'compass', 1)
+        +skill('Javascript', 'javascript', 0)
+        +skill('PHP', 'php', 0)
+
+    .skill-category
+      h3 Base de données
+      ul
+        +skill('MySQL', 'mysql', 0)
+
+    .skill-category
+      h3 SE
+      ul
+        +skill('GNU/Linux', 'linux', 0)
+        +skill('Debian', 'debian', 1)
+        +skill('Ubuntu', 'ubuntu', 1)
+        +skill('Windows', 'windows', 0)
+
+    .skill-category
+      h3 Gestionnaires de versions
+      ul
+        +skill('Github', 'github', 0)
+
+    .skill-category
+      h3 Graphisme & PAO
+      ul
+        +skill('Gimp', 'art', 0)
+        +skill('Inkscape', 'inkscape', 0)
+        +skill('Scribus', 'pen', 0)

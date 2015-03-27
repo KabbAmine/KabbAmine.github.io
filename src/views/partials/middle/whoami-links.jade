@@ -1,0 +1,9 @@
+mixin link(href, iconName)
+	li: a(href=href): span(class='icon-#{iconName}')
+
+.links
+	ul
+		+link('https://github.com/KabbAmine', 'github-square')
+		+link('https://twitter.com/KabbAmine', 'twitter-square')
+		+link('https://plus.google.com/110673805984952333827', 'googleplus-square')
+		+link('mailto:amine.kabb@gmail.com', 'mail-square')

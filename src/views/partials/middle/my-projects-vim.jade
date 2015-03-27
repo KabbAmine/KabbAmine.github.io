@@ -1,0 +1,48 @@
+- var myGithub = 'https://github.com/KabbAmine/'
+
+mixin plugin(name, description, href, prop)
+  li
+    dl
+      dt #{name}#[span= prop]
+      dd: a(href= myGithub + href)= description
+
+
+.fl-col-s-12.ft-col-l-6
+  h2 Plugins &amp; frameworks Vim
+  ul.bubble-slider
+
+    +plugin(
+      'vCoolor',
+      'Insérez & modifiez vos couleurs directement dans Vim.',
+      'vcoolor.vim',
+      'Linux, Windows & Mac'
+    )
+    +plugin(
+      'zeavim',
+      'Utilisez le navigateur de documentation Zeal à partir de Vim.',
+      'zeavim.vim',
+      'Linux & Windows'
+    )
+    +plugin(
+      'gulp-vim',
+      'Un simple wrapper de gulp pour Vim.',
+      'gulp-vim',
+      'Linux & Windows'
+    )
+    +plugin(
+      'vullScreen',
+      'Affichez Vim en mode plein écran.',
+      'vullScreen.vim',
+      'Linux'
+    )
+
+.fl-col-s-12.lt-col-l-6
+  h2 Thèmes Vim
+  ul.bubble-slider
+
+    +plugin(
+      'yowish',
+      'Un thème sombre pour Vim très... jaunâtre!',
+      'yowish.vim',
+      'GUI & Terminal-256'
+    )

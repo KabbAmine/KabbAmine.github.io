@@ -1,0 +1,4 @@
+ressources/*
+.sass-cache/*
+node_modules/
+sass/lib/baze

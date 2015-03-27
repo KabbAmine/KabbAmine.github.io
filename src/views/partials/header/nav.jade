@@ -1,0 +1,20 @@
+//- ****************
+//-		Menu
+//- ****************
+
+mixin menu(href, iconName, content)
+	li(style!=attributes.style)
+		a(href=href)
+			span(class='icon-#{iconName}')
+			span.menu-element= content
+
+
+nav.nav.row
+
+	ul.fl-col-s-6
+		+menu('#myProjects', 'terminal', ' projets')
+		+menu('#', 'globe', ' blog')(style='display:none;')
+
+	ul.fl-col-s-6
+		+menu('#skills', 'skills', ' compétences')
+		+menu('#whoami', 'user', ' à propos')

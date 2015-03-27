@@ -1,0 +1,30 @@
+mixin glass(title, description, href, imgSrc, imgAlt)
+  .glass
+    .glass-container
+      .glass-image
+        img(src=imgSrc, alt=imgAlt)
+      .glass-content
+        h1= title
+        p= description
+      .glass-link
+        a(href=href)= href
+
+
+.fl-col-s-12
+  h2 Site &amp; applications Web
+
+  +glass(
+    'KabbAmine',
+    'Page personnelle, là où vous êtes actuellement.',
+    'https://kabbamine.github.io',
+    '../dist/assets/img/ka_thumbnail.jpg',
+    'kabbamine.github.io thumbnail'
+  )
+
+  +glass(
+    'Marocain d\'ailleurs',
+    'Blog de tutoriels sur GNU/Linux et l\'open-source en général.',
+    'http://le-marocain-dailleurs.blogspot.com',
+    '../dist/assets/img/mda_thumbnail.jpg',
+    'le-marocain-dailleurs.blogspot.com thumbnail'
+  )

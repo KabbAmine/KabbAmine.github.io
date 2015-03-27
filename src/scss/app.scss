@@ -3,7 +3,7 @@
 @import "variables";
 
 // A symbolic link to sass baze folder.
-@import "lib/baze/_baze-link.scss";
+@import "../lib/baze/_baze-link.scss";
 
 @import "base";
 @import "layout";
