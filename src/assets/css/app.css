@@ -265,7 +265,7 @@ form input, form select, form textarea {
 
 form input:hover, form select:hover, form textarea:hover {
   background-color: #646464;
-  border: 1px solid #ababab;
+  border: 1px solid #acacac;
   -moz-box-shadow: rgba(224, 215, 72, 0.4) 0px 0px 1px 1px;
   -webkit-box-shadow: rgba(224, 215, 72, 0.4) 0px 0px 1px 1px;
   box-shadow: rgba(224, 215, 72, 0.4) 0px 0px 1px 1px;
@@ -1216,10 +1216,10 @@ table th {
   opacity: 1;
   color: white;
   background-color: #b3b3b3;
-  border-left: 10px solid #ababab;
-  -moz-box-shadow: #ababab 0px -3px 0 inset, #b8b8b8 0px 1px 1px;
-  -webkit-box-shadow: #ababab 0px -3px 0 inset, #b8b8b8 0px 1px 1px;
-  box-shadow: #ababab 0px -3px 0 inset, #b8b8b8 0px 1px 1px;
+  border-left: 10px solid #acacac;
+  -moz-box-shadow: #acacac 0px -3px 0 inset, #b8b8b8 0px 1px 1px;
+  -webkit-box-shadow: #acacac 0px -3px 0 inset, #b8b8b8 0px 1px 1px;
+  box-shadow: #acacac 0px -3px 0 inset, #b8b8b8 0px 1px 1px;
 }
 
 .btn-error, .fl-btn-error {
