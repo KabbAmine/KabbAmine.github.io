@@ -1,7 +1,7 @@
 var gulp        = require('gulp'),
 	browserSync = require('browser-sync'),
 	compass     = require('gulp-compass'),
-	jade        = require('gulp-jade'),
+	pug         = require('gulp-pug'),
 	minifyCss   = require('gulp-minify-css'),
 	concatCss   = require('gulp-concat-css'),
 	htmlReplace = require('gulp-html-replace'),
@@ -9,15 +9,13 @@ var gulp        = require('gulp'),
 	replace     = require('gulp-replace');
 
 // Tâche de base avec browser-sync activé.
-gulp.task('default', ['compass', 'jade', 'serve'], function() {
-
+gulp.task('default', ['compass', 'pug', 'serve'], function() {
 	gulp.watch('./src/**/*.scss', ['compass']);
-	gulp.watch('./src/views/**/*.jade', ['jade']);
-	
+	gulp.watch('./src/views/**/*.pug', ['pug']);
 });
 
 // Tâche de base sans watching.
-gulp.task('src', ['compass', 'jade']);
+gulp.task('src', ['compass', 'pug']);
 
 // Browser-sync.
 gulp.task('serve', function() {
@@ -41,9 +39,9 @@ gulp.task('compass', function() {
 		.pipe(gulp.dest('src/assets/css/'));
 });
 
-gulp.task('jade', function() {
-	return gulp.src('./src/views/*.jade')
-    .pipe(jade({
+gulp.task('pug', function() {
+	return gulp.src('./src/views/*.pug')
+    .pipe(pug({
 		pretty: true
     }))
     .pipe(gulp.dest('./src'));

@@ -1,0 +1,26 @@
+doctype html
+html(lang="fr")
+
+  head
+    block head
+      meta(charset="utf-8")
+      meta(
+        name="viewport"
+        content="width=device-width; initial-scale:1.0; maximum-scale=1.0"
+      )
+      include ../partials/head/links.pug
+
+  body
+    block header
+      header#header
+        include ../partials/header/nav.pug
+        include ../partials/header/title-box.pug
+    block middle
+      #middle
+        include ../partials/middle/whoami.pug
+        include ../partials/middle/skills.pug
+        .clear
+        include ../partials/middle/my-projects.pug
+    block footer
+      footer#footer
+        include ../partials/footer/footer.pug
